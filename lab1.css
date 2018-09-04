@@ -1,6 +1,12 @@
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
+ background-color: aquamarine;
+ }
+
+ #row_completo{
+   padding: 0%;
+   max-width: 100%;
+ }
+
 
 .navbar {
   margin-bottom: 0;
