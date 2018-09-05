@@ -1,12 +1,7 @@
-body {
- background-color: aquamarine;
- }
-
  #row_completo{
    padding: 0%;
    max-width: 100%;
  }
-
 
 .navbar {
   margin-bottom: 0;
@@ -52,7 +47,6 @@ body {
   margin-bottom: 2rem;
   border: 0;
 }
-
 
 .card > img {
   margin-bottom: .75rem;
