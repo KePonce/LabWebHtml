@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Laboratorio 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="lab1.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <header>
+          <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 py-4">
+                  <h4 class="text-white">Laboratorio 1</h4>
+                  <p class="text-muted">Pagina creada usando HTML, CSS y JavaScript </p>
+                </div>
+                <div class="col-sm-4 py-4">
+                  <h4 class="text-white">Universidad Rafael Landivar</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Kevin Ponce</a></li>
+                    <li><a href="#" class="text-white">1029313</a></li>
+                    <li><a href="#" class="text-white">Programacion Web</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-dark bg-dark">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="navbar-brand">Bienvenido</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+    
+        <main role="main">
+    
+          <section class="jumbotron text-center">
+            <div class="container">
+              <h1 class="jumbotron-heading">Galeria de Fotos</h1>
+              <p class="lead text-muted">Fotos de ferrari</p>
+              <p>
+                <a href="#" class="btn btn-primary" onclick="myFunction()">Despliega Mensaje</a>
+                <a id="bcolor" href="#" class="btn btn-secondary" onclick = "colorchange()">Cambio de Color</a>
+              </p>
+            </div>
+          </section>
+    
+          <div class="album text-muted">
+            <div class="container">
+              <div class="row">
+                <div class="card">
+                  <img data-tipo-carro="Ferrari 458 Italia" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/458-Speciale-2013/med_ferrari_458-speciale-2013_r6.jpg" alt="Card image cap">
+                  <p class="card-text">1</p>
+                </div>
+                <div class="card">
+                  <img data-tipo-carro="Ferrari 121" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/121LM-Scaglietti-Spider-1955/med_ferrari_121lm-scaglietti-spider-1955_r5.jpg" alt="Card image cap">
+                  <p class="card-text">2</p>
+                </div>
+                <div class="card">
+                  <img  data-tipo-carro="Ferrari Spider 458" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/sr-auto/Ferrari-458-Spider-Liberty-Walk-2015/med_sr-auto_ferrari-458-spider-liberty-walk-2015_r4.jpg" alt="Card image cap">
+                  <p class="card-text" >3</p>
+                </div>
+                <div class="card">
+                  <img data-tipo-carro="Ferrari 250" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/250-GT-Lusso-Berlinetta-Pininfarina-1962-1964/med_ferrari_250-gt-lusso-pininfarina-1962-64_r26.jpg" alt="Card image cap">
+                  <p class="card-text">4</p>
+                </div>
+                <div class="card">
+                  <img data-tipo-carro="Ferrari Enzo" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/Enzo-2002/med_ferrari_enzo_m41.jpg" alt="Card image cap">
+                  <p class="card-text">5</p>
+                </div>
+                <div class="card">
+                  <img data-tipo-carro="La Ferrari" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/La-2013/med_ferrari_laferrari-2013_r9.jpg" alt="Card image cap">
+                  <p class="card-text">6</p>
+                </div>
+              </div>
+              <audio id="myAudio">
+                  <source src="https://htmlreference.io/assets/Hal.mp3" type="audio/mpeg">
+              </audio>
+                
+                <h1 class="container-SoundRep" >Reproducir Sonido</h1>
+                <div align="center">
+                    <button id="bplay" onclick="playAudio()" type="button">Play</button>
+                    <button id="bpause" onclick="pauseAudio()" type="button">Pause</button> 
+                </div>
+            </div>
+          </div>
+        
+          
+        </main>
+    
+
+
+  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+    function myFunction() {
+      alert('100 por la risa despues de este mensaje');
+    }
+    function colorchange() {
+      document.getElementById("bcolor").style.color = "blue";
+      document.getElementById("bcolor").style.background = "red";
+    }
+
+    function TipoFerrari(carro){
+      var tipo = carro.getAttribute("data-tipo-carro");
+      alert("El carro es " + tipo);
+    }
+
+    var x = document.getElementById("myAudio"); 
+
+    function playAudio() { 
+        x.play(); 
+    } 
+
+    function pauseAudio() { 
+        x.pause(); 
+    } 
+    </script>
+    </html>
