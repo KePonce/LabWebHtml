@@ -64,35 +64,33 @@
             <div class="container">
               <div class="row">
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/ferrari/458-Speciale-2013/med_ferrari_458-speciale-2013_r6.jpg" alt="Card image cap">
-                  <p class="card-text"> Ferrari 458 Italia</p>
+                  <img data-tipo-carro="Ferrari 458 Italia" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/458-Speciale-2013/med_ferrari_458-speciale-2013_r6.jpg" alt="Card image cap">
+                  <p class="card-text">1</p>
                 </div>
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/ferrari/121LM-Scaglietti-Spider-1955/med_ferrari_121lm-scaglietti-spider-1955_r5.jpg" alt="Card image cap">
-                  <p class="card-text">Ferrari 121</p>
+                  <img data-tipo-carro="Ferrari 121" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/121LM-Scaglietti-Spider-1955/med_ferrari_121lm-scaglietti-spider-1955_r5.jpg" alt="Card image cap">
+                  <p class="card-text">2</p>
                 </div>
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/sr-auto/Ferrari-458-Spider-Liberty-Walk-2015/med_sr-auto_ferrari-458-spider-liberty-walk-2015_r4.jpg" alt="Card image cap">
-                  <p class="card-text">Ferrari 458 Spider</p>
+                  <img  data-tipo-carro="Ferrari Spider 458" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/sr-auto/Ferrari-458-Spider-Liberty-Walk-2015/med_sr-auto_ferrari-458-spider-liberty-walk-2015_r4.jpg" alt="Card image cap">
+                  <p class="card-text" >3</p>
                 </div>
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/ferrari/250-GT-Lusso-Berlinetta-Pininfarina-1962-1964/med_ferrari_250-gt-lusso-pininfarina-1962-64_r26.jpg" alt="Card image cap">
-                  <p class="card-text">Ferrari 250</p>
+                  <img data-tipo-carro="Ferrari 250" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/250-GT-Lusso-Berlinetta-Pininfarina-1962-1964/med_ferrari_250-gt-lusso-pininfarina-1962-64_r26.jpg" alt="Card image cap">
+                  <p class="card-text">4</p>
                 </div>
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/ferrari/Enzo-2002/med_ferrari_enzo_m41.jpg" alt="Card image cap">
-                  <p class="card-text">Ferrari Enzo</p>
+                  <img data-tipo-carro="Ferrari Enzo" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/Enzo-2002/med_ferrari_enzo_m41.jpg" alt="Card image cap">
+                  <p class="card-text">5</p>
                 </div>
                 <div class="card">
-                  <img src="https://www.coches.com/fotos_historicas/ferrari/La-2013/med_ferrari_laferrari-2013_r9.jpg" alt="Card image cap">
-                  <p class="card-text">La Ferrari</p>
+                  <img data-tipo-carro="La Ferrari" onclick="TipoFerrari(this)" src="https://www.coches.com/fotos_historicas/ferrari/La-2013/med_ferrari_laferrari-2013_r9.jpg" alt="Card image cap">
+                  <p class="card-text">6</p>
                 </div>
               </div>
               <audio id="myAudio">
-
                   <source src="https://htmlreference.io/assets/Hal.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
+              </audio>
                 
                 <h1 class="container-SoundRep" >Reproducir Sonido</h1>
                 <div align="center">
@@ -118,6 +116,11 @@
     function colorchange() {
       document.getElementById("bcolor").style.color = "blue";
       document.getElementById("bcolor").style.background = "red";
+    }
+
+    function TipoFerrari(carro){
+      var tipo = carro.getAttribute("data-tipo-carro");
+      alert("El carro es " + tipo);
     }
 
     var x = document.getElementById("myAudio"); 
