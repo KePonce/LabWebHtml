@@ -28,13 +28,13 @@ body {
   color: yellow;
 }
 
-p.lead.text-muted {
-  color: green;
-}
-
-
 .jumbotron .container {
   max-width: 40rem;
+}
+
+.container-SoundRep{
+  color: black;
+  text-align: center;
 }
 
 .album {
@@ -44,6 +44,7 @@ p.lead.text-muted {
   background-color:red;
 }
 
+
 .card {
   float: left;
   width: 33.333%;
@@ -52,12 +53,15 @@ p.lead.text-muted {
   border: 0;
 }
 
+
 .card > img {
   margin-bottom: .75rem;
 }
 
 .card-text {
   font-size: 85%;
+  color: blue;
+  text-align: center;
 }
 
 footer {

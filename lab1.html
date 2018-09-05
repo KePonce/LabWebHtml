@@ -55,7 +55,7 @@
               <p class="lead text-muted">Fotos de ferrari</p>
               <p>
                 <a href="#" class="btn btn-primary" onclick="myFunction()">Despliega Mensaje</a>
-                <a href="#" class="btn btn-secondary">Cambio de Color</a>
+                <a id="bcolor" href="#" class="btn btn-secondary" onclick = "colorchange()">Cambio de Color</a>
               </p>
             </div>
           </section>
@@ -88,10 +88,20 @@
                   <p class="card-text">La Ferrari</p>
                 </div>
               </div>
-    
+              <audio id="myAudio">
+
+                  <source src="https://htmlreference.io/assets/Hal.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+                
+                <h1 class="container-SoundRep" >Reproducir Sonido</h1>
+                
+                <button onclick="playAudio()" type="button">Play Audio</button>
+                <button onclick="pauseAudio()" type="button">Pause Audio</button> 
             </div>
           </div>
-    
+        
+          
         </main>
     
 
@@ -104,5 +114,19 @@
     function myFunction() {
       alert('100 por la risa despues de este mensaje');
     }
+    function colorchange() {
+      document.getElementById("bcolor").style.color = "blue";
+      document.getElementById("bcolor").style.background = "red";
+    }
+
+    var x = document.getElementById("myAudio"); 
+
+    function playAudio() { 
+        x.play(); 
+    } 
+
+    function pauseAudio() { 
+        x.pause(); 
+    } 
     </script>
     </html>
