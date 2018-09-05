@@ -16,7 +16,7 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: rgb(59, 48, 156);
 }
 
 .jumbotron p:last-child {
@@ -25,7 +25,13 @@ body {
 
 .jumbotron-heading {
   font-weight: 300;
+  color: yellow;
 }
+
+p.lead.text-muted {
+  color: green;
+}
+
 
 .jumbotron .container {
   max-width: 40rem;
